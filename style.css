@@ -119,7 +119,7 @@ ul {
 }
 
 li {
-
+  display: inline-block;
   font-size: 30px;
   list-style-type: none;
   padding: 10px;
@@ -136,6 +136,37 @@ li span {
 .complete {
   position: relative;
   top: 60px;
+}
+
+.complete-title {
+  animation: complete 4s infinite;
+}
+
+@keyframes complete {
+  0% {
+    color: rgb(230, 23, 23);
+  }
+
+  25% {
+    color: rgb(51, 230, 23);
+
+  }
+
+  50% {
+    color: rgb(23, 151, 230);
+    transform: scale(1.2);
+
+  }
+
+  75% {
+    color: rgb(178, 23, 230);
+
+  }
+
+  100% {
+    color: rgb(230, 154, 23);
+
+  }
 }
 
 
