@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom Countdown</title>
     <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- video background -->
-    <video  class="video-background" loop muted autoplay>
+    <video class="video-background" loop muted autoplay>
         <source src="time.mp4">
     </video>
     <div class="video-overlay"></div>
     <!-- container -->
     <div class="container">
         <!-- input -->
-        <div class="input-container" id="input-container" >
+        <div class="input-container" id="input-container">
             <h1>Create A Custom Countdown</h1>
             <form class="form" id="countdownForm">
                 <label for="title">Title</label>
@@ -30,10 +33,10 @@
         <div class="countdown" id="countdown" hidden>
             <h1 class="countdown-title" id="countdown-title"></h1>
             <ul>
-                <li><span></span>Days</li>
-                <li><span></span>Hours</li>
-                <li><span></span>Minutes</li>
-                <li><span></span>Seconds</li>
+                <li><span class="time"></span>Days</li>
+                <li><span class="time"></span>Hours</li>
+                <li><span class="time"></span>Minutes</li>
+                <li><span class="time"></span>Seconds</li>
             </ul>
             <button id="countdown-button">Reset</button>
         </div>
@@ -48,4 +51,5 @@
     <!-- Script -->
     <script src="script.js"></script>
 </body>
+
 </html>
