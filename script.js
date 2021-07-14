@@ -1,6 +1,7 @@
 const inputContainer = document.getElementById('input-container')
 const countdownForm = document.getElementById('countdownForm')
 const dateEl = document.getElementById('date-picker')
+const alert = document.getElementById('alert')
 
 
 
@@ -94,7 +95,15 @@ function updateCountdown(e) {
 
 
     if (!countdownDate) {
-        alert('Please select the Date')
+
+        alert.innerText = 'Please select the Date'
+        alert.classList.add('alert-danger')
+        alert.classList.remove('alert-success')
+        alert.hidden = false
+        setTimeout(() => {
+            alert.hidden = true
+        }, 3000);
+
         return
     }
 
@@ -106,6 +115,10 @@ function updateCountdown(e) {
 // reset all values
 function reset() {
     // hide countdown and  show input
+    alert.innerText = 'Resset success'
+    alert.classList.remove('alert-danger')
+    alert.classList.add('alert-success')
+    alert.hidden = false
     countdownEl.hidden = true
     completeEl.hidden = true
     inputContainer.hidden = false
