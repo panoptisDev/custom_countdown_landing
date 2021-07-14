@@ -100,6 +100,8 @@ function updateCountdown(e) {
         alert.classList.add('alert-danger')
         alert.classList.remove('alert-success')
         alert.hidden = false
+        document.body.style.backgroundColor = '#F8D7DA'
+
         setTimeout(() => {
             alert.hidden = true
         }, 3000);
@@ -119,6 +121,8 @@ function reset() {
     alert.classList.remove('alert-danger')
     alert.classList.add('alert-success')
     alert.hidden = false
+    document.body.style.backgroundColor = '#CFF4FC'
+
     countdownEl.hidden = true
     completeEl.hidden = true
     inputContainer.hidden = false
